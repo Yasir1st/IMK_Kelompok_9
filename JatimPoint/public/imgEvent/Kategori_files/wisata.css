@@ -1,0 +1,369 @@
+.main{
+    padding: 20px 40px;
+}
+
+.main .title{
+    font-size: 20px;
+    margin-bottom: 3px;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.main .bar{
+    height: 2px;
+    border-radius: 1px;
+    width: 300px;
+    background-color: darkgray;
+    margin-bottom: 10px;
+}
+
+/* Deskripsi Wisata */
+.deskripsi{
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+    gap: 20px;
+}
+
+.deskripsi .hero{
+    height: 400px;
+    border-radius: 10px;
+    background-image: url('/img/bromo2.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.deskripsi .hero img{
+    width: 170px;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+    background: linear-gradient(to right, white, rgb(225,225,225,0));
+}
+
+.deskripsi .deskirpsiWisata .desc{
+    text-align: justify;
+    margin-top: 8px;
+}
+
+.deskripsi .deskirpsiWisata .kontakPengelola{
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.deskripsi .deskirpsiWisata .kontakPengelola div{
+    display: flex;
+    grid-template-columns: 1fr 3fr;
+}
+
+.deskripsi .deskirpsiWisata .kontakPengelola p{
+    margin: 0 10px;
+    margin-top: 9px;
+    font-size: 20px;
+}
+
+.deskripsi .deskirpsiWisata .kontakPengelola img{
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px darkgray;
+    background-color: #6f9063;
+    padding: 10px;
+}
+
+
+/* lokasi */
+.lokasi .alamat{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    box-shadow: 1px 1px 2px darkgray;
+    border-radius: 10px;
+}
+
+.lokasi .alamat .jarak{
+    width: 100%;
+    height: 200px;
+    padding: 20px 40px;
+}
+
+.lokasi .alamat .jarak h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.lokasi .alamat .jarak p{
+    font-size: 20px;
+}
+
+.lokasi .alamat .map{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* penginapan terdekat */
+.penginapan .listPenginapan{
+    display: flex;
+}
+
+.penginapan .listPenginapan .penginapanBox{
+    margin-right: 20px;
+    background-image: url('/imgPenginapan/penginapan1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px darkgray;
+    transition: 0.5s;
+}
+
+.penginapan .listPenginapan .penginapanBox:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+.penginapan .listPenginapan .penginapanBox .jarak{
+    padding: 20px 30px;
+    height: 150px;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px darkgray;
+}
+
+.penginapan .listPenginapan .penginapanBox .descPenginapan{
+    background-color: black;
+    opacity: 0.7;
+    padding: 10px 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+.penginapan .listPenginapan .penginapanBox .descPenginapan p{
+    text-align: justify;
+    color: white;
+}
+
+.penginapan .listPenginapan .penginapanBox .descPenginapan .nama{
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.penginapan .listPenginapan .next img{
+    width: 50px;
+    height: 50px;
+    background-color: #6f9063;
+    padding: 10px;
+    border-radius: 25px;
+    transition: 0.4s;
+    margin-top: 100px;
+    box-shadow: 2px 2px 3px darkgray;
+}
+
+.penginapan .listPenginapan .next img:hover{
+    background-color: #A7D397;
+    transition: 0.4s;
+}
+
+
+/* kuliner */
+.kuliner .daftarKuliner{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
+}
+
+.kuliner .daftarKuliner .deskripsiKuliner{
+    display: flex;
+}
+
+.kuliner .daftarKuliner .deskripsiKuliner .imgKuliner{
+    height: 100%;
+    width: 180px;
+    background-image: url('/imgKuliner/bakso.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px darkgray;
+}
+
+.kuliner .daftarKuliner .deskripsiKuliner .nameKuliner p{
+    text-align: justify;
+    padding-right: 30px;
+}
+
+.kuliner .daftarKuliner .deskripsiKuliner .nameKuliner .name{
+    font-weight: bolder;
+}
+
+/* Event */
+.event .daftarEvent .deskripsiEvent{
+    display: grid;
+    grid-template-columns: 1.5fr 10fr;
+    background-color: #d4d3d3;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px darkgray;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+
+.event .daftarEvent .deskripsiEvent:hover{
+    transform: translateX(10px);
+    transition: 0.4s;
+}
+
+.event .daftarEvent .deskripsiEvent .imgEvent{
+    height: 100%;
+    background-image: url('/imgEvent/jazz.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 4px 0 3px darkgray;
+}
+
+.event .daftarEvent .deskripsiEvent .namaEvent{
+    padding: 20px 30px;
+}
+
+.event .daftarEvent .deskripsiEvent .namaEvent .nama{
+    font-weight: bolder;
+}
+
+.event .daftarEvent .deskripsiEvent .namaEvent p{
+    text-align: justify;
+}
+
+/* ulasan */
+.pengisianUlasan{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.pengisianUlasan .inputUlasan{
+    display: flex;
+    flex-direction: column;
+}
+
+.pengisianUlasan .inputUlasan input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid darkgray;
+    font-size: 17px;
+}
+
+.pengisianUlasan .inputUlasan textarea{
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid darkgray;
+    font-size: 18px;
+}
+
+.pengisianUlasan .inputUlasan .submit{
+    margin-top: 10px;
+    font-size: 17px;
+    border: none;
+    background-color: #6f9063;
+    color: white;
+    transition: 0.3s;
+}
+
+.pengisianUlasan .inputUlasan .submit:hover{
+    background-color: #A7D397;
+    transition: 0.3s;
+}
+
+.pengisianUlasan .listKomentar{
+    background-color: #eaeaea;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.pengisianUlasan .listKomentar .komentar{
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 10px;
+}
+
+.pengisianUlasan .listKomentar .komentar .isiKomentar{
+    text-align: justify;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+.pengisianUlasan .listKomentar .komentar .komentator{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1150px){
+    .lokasi .alamat .jarak h1{
+        font-size: 25px;
+        margin-top: 0;
+    }
+    
+    .lokasi .alamat .jarak p{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .deskripsi{
+        display: inherit;
+    }
+
+    .deskripsi .hero{
+        margin-bottom: 20px;
+    }
+
+    .lokasi .alamat .jarak{
+        padding: 10px 20px;
+        height: 100px;
+    }
+
+    .lokasi .alamat .jarak h1{
+        font-size: 25px;
+        margin-top: 0;
+    }
+    
+    .lokasi .alamat .jarak p{
+        font-size: 20px;
+    }
+
+    .lokasi .alamat{
+        display: inherit;
+    }
+
+    .penginapan .listPenginapan{
+        display: inherit;
+    }
+
+    .penginapan .listPenginapan .penginapanBox{
+       margin-bottom: 20px;
+    }
+
+    .penginapan .listPenginapan .next img{
+        margin-top: 0;
+    }
+
+    .kuliner .daftarKuliner{
+        display: inherit;
+    }
+
+    .kuliner .daftarKuliner .deskripsiKuliner{
+        margin-bottom: 20px;
+    }
+
+    .event .daftarEvent .deskripsiEvent{
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .pengisianUlasan{
+        display: inherit;
+    }
+}
+
+@media screen and (max-width: 640px){
+    
+}

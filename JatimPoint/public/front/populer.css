@@ -1,0 +1,56 @@
+/* main */
+.main{
+    padding: 20px 40px;
+}
+
+.main .bar{
+    height: 2px;
+    width: 230px;
+    background-color: darkgray;
+    margin: 5px 0;
+    margin-bottom: 10px;
+}
+
+.listPopuler .boxpopuler{
+    padding-top: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s;
+    color: white;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 5px darkgray;
+}
+
+.listPopuler .boxpopuler:hover{
+    transform: translateX(10px);
+    transition: 0.4s;
+}
+
+.listPopuler .boxpopuler .deskripsi_list{
+    padding: 20px 30px;
+    background-color: #48613f;
+    border-radius: 0 0 10px 10px;
+    opacity: 0.8;
+}
+
+.listPopuler .boxpopuler .deskripsi_list .desk{
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+
+.listPopuler .boxpopuler .deskripsi_list .desk a .arrow{
+    width: 50px;
+    height: 50px;
+    background-color: #6f9063;
+    padding: 10px;
+    border-radius: 25px;
+    transition: 0.4s;
+    box-shadow: 2px 2px 3px darkgray;
+    margin-left: 40%;
+}
+
+.listPopuler .boxpopuler .deskripsi_list .desk a .arrow:hover{
+    background-color: #A7D397;
+    transition: 0.4s;
+}

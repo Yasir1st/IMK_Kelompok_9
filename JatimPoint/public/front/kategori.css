@@ -1,0 +1,88 @@
+/* main kategori */
+.container .main{
+    padding: 20px 40px;
+}
+
+.container .main .barKategori{
+    height: 2px;
+    width: 230px;
+    background-color: darkgray;
+    margin: 5px 0;
+}
+
+.container .main .kategori{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.container .main .kategori a{
+    height: 250px;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 110px;
+    box-shadow: 2px 2px 3px darkgray;
+    font-weight: 800;
+    font-size: 30px;
+    transition: 0.5s;
+    border: 1px solid #9ba89c;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px darkgray;
+}
+
+.container .main .kategori a:hover{
+    transition: 0.5s;
+    opacity: 0.7;
+    transform: translateY(-7px);
+}
+
+.container .main .kategori .hutan{
+    background-image: url('/img/djawatan.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container .main .kategori .gunung{
+    background-image: url('/img/bromo2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container .main .kategori .danau{
+    background-image: url('/img/ranukumbolo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container .main .kategori .airTerjun{
+    background-image: url('/img/tumpaksewu2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container .main .kategori .pantai{
+    background-image: url('/img/balekambang.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container .main .kategori .sungai{
+    background-image: url('/img/sungaimaron.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 640px){
+    .container .main .kategori a{
+        font-weight: 800;
+        font-size: 20px;
+    }
+}
+
+

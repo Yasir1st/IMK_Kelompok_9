@@ -1,0 +1,169 @@
+/* main */
+.main{
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 10px;
+}
+
+/* mainleft */
+.main .left{
+    grid-column: 1;
+    padding: 20px 0;
+}
+
+.main .left .img{
+    background-image: url('/img/bromo.jpg');
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px darkgray;
+}
+
+.main .left h3{
+    font-size: 25px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main .left p{
+    text-align: justify;
+}
+
+/* mainright */
+.main .right{
+    grid-column: 2;
+    padding: 20px;
+}
+
+.main .right h3{
+    margin-bottom: 1px;
+    font-size: 23px;
+}
+
+.main .right .bar{
+    height: 1.5px;
+    width: 100%;
+    background-color: gray;
+    border-radius: 1px;
+    margin-bottom: 8px;
+}
+
+/* berita */
+.main .right .berita{
+    padding-bottom: 20px;
+}
+
+
+.main .right .berita .wrapBerita{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.main .right .berita .wrapBerita a{
+    margin-top: 10px;
+}
+
+.main .right .berita .wrapBerita a img{
+    width: 40px;
+    height: 40px;
+    background-color: #6f9063;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.main .right .berita .wrapBerita a img:hover{
+    background-color: #A7D397;
+    transition: 0.4s;
+}
+
+.main .right .berita .berita1{
+    background-image: url(/img/kebakaran.jpg);
+}
+
+.main .right .berita .berita2{
+    background-image: url(/img/tumpakSewu.jpg);
+}
+
+.main .right .berita .wrapBerita p{
+    text-align: justify;
+    margin-bottom: 5px;
+    color: white;
+
+}
+
+.main .right .berita .wrapBerita div{
+    height: 1px;
+    width: 40%;
+    background-color: white;
+    margin-bottom: 5px;
+    border-radius: 1px;
+}
+
+.main .right .berita .wrapBerita .judulBerita{
+    font-weight: bold;
+}
+
+/* wisata terdekat */
+.main .right .terdekat .wrapTerdekat{
+    padding: 10px;
+    background-color: #d7d7d7;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgb(157, 157, 157);
+}
+
+.main .right .terdekat .wrapTerdekat .listWisataTerdekat a{
+    display: flex;
+    background-image: url(/img/tumpakSewu.jpg);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.main .right .terdekat .wrapTerdekat .listWisataTerdekat a:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.main .right .terdekat .wrapTerdekat .listWisataTerdekat a .jarakWisata{
+    align-content: flex-end;
+    color: white;
+    font-weight: 100px;
+}
+
+.main .right .terdekat .wrapTerdekat .listWisataTerdekat a h4{
+    color: white;
+}
+
+.main .right .terdekat .wrapTerdekat .seeMoreTerdekat{
+    color: #739072;
+}
+
+.main .right .terdekat .wrapTerdekat .seeMoreTerdekat:hover{
+    color: blue;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 640px){
+    .main{
+        padding: 20px 40px;
+        display: inherit;
+    }
+
+    .main .left .img{
+        height: 250px;
+    }
+}
